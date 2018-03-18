@@ -1,0 +1,17 @@
+
+# Connection data for the database
+
+MYSQL_USER = ''
+MYSQL_PASSWD = ''
+MYSQL_HOST = ''
+MYSQL_DBNAME = ''
+
+# Postgres SQL Connection
+
+PG_USER = ''
+PG_PASSWD = ''
+PG_HOST = ''
+PG_DBNAME = ''
+
+# Google API Key
+GOOGLE_API_KEY = ''
