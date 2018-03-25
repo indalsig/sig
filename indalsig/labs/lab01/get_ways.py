@@ -6,9 +6,9 @@ This is a temporary script file.
 """
 
 import overpy
-from db.dao import WayDAO, NodeDAO
-from db import Session
-from domain import Way, WayNode, Node
+from indalsig.db import WayDAO, NodeDAO
+from indalsig.db import Session
+from indalsig.domain import Way, WayNode, Node
 
 # Crear session y DAOs
 session = Session()

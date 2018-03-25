@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-import settings
+from indalsig import settings
 
 # connection_string = 'mysql+mysqldb://' + settings.MYSQL_USER + ':' + settings.MYSQL_PASSWD + '@' + \
 #                     settings.MYSQL_HOST + '/' + settings.MYSQL_DBNAME + '?charset=utf8'

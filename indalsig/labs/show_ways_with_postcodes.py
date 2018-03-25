@@ -1,5 +1,5 @@
 import psycopg2
-import settings
+from indalsig import settings
 
 from shapely.wkb import loads
 
@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
 import seaborn as sns
-from labs import alpha_shape
+from indalsig.labs import alpha_shape
 
 conn = psycopg2.connect(user=settings.PG_USER, password=settings.PG_PASSWD,
                         host=settings.PG_HOST,

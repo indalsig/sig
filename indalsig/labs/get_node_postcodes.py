@@ -3,7 +3,7 @@
 import googlemaps
 import psycopg2
 import pprint
-import settings
+from indalsig import settings
 
 gmaps = googlemaps.Client(key=settings.GOOGLE_API_KEY)
 

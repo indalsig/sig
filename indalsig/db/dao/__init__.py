@@ -1,4 +1,4 @@
-from domain import Way, Node, WayNode
+from indalsig.domain import Way, Node, WayNode
 
 
 class WayDAO:

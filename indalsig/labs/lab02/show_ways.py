@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
-
 import psycopg2
-import settings
+from indalsig import settings
 
 from shapely.wkb import loads
 from geopandas import GeoSeries

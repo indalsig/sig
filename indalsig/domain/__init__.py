@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, BigInteger, Numeric, ForeignKey
-from sqlalchemy.orm import relationship, backref
-from db import Base
+from sqlalchemy.orm import relationship
+from indalsig.db import Base
 
 
 class Way(Base):
