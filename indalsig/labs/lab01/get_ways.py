@@ -6,7 +6,7 @@ This is a temporary script file.
 """
 
 import overpy
-from indalsig.db import WayDAO, NodeDAO
+from indalsig.db.dao import WayDAO, NodeDAO
 from indalsig.db import Session
 from indalsig.domain import Way, WayNode, Node
 

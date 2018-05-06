@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, BigInteger, Numeric, ForeignKey
 from sqlalchemy.orm import relationship
 from indalsig.db import Base
+from geoalchemy2 import Geometry
 
 
 class Way(Base):
@@ -60,3 +61,23 @@ class WayNode(Base):
 
     def __init__(self):
         self.seq
+
+class Address(Base):
+
+    __tablename__ = 'sig_addresses'
+
+    id = Column(Integer, primary_key=True)
+    formatted_address = Column(String(255))
+    postcode = Column(Integer)
+    street_name = Column(String(255))
+    street_number = Column(String(50))
+    lon = Column(Numeric(13, 10))
+    lat = Column(Numeric(13, 10))
+
+class Postcode(Base):
+
+    __tablename__ = 'sig_postcodes'
+
+    id = Column(Integer, primary_key=True)
+    postcode = Column(Integer)
+    geom = Column(Geometry('MULTIPOLYGON'))
