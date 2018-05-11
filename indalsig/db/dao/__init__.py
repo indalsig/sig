@@ -9,6 +9,9 @@ class WayDAO:
     def get(self, idx):
         return self.session.query(Way).get(idx)
 
+    def getAll(self):
+        return self.session.query(Way).all()
+
     def save(self, item):
 
         self.session.add(item)

@@ -16,8 +16,6 @@ session = Session()
 wayDAO = WayDAO(session)
 nodeDAO = NodeDAO(session)
 
-
-
 # Conectar con la Overpass API para traer todas sus calles y respectivos nodos
 api = overpy.Overpass()
 

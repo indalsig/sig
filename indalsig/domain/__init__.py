@@ -13,6 +13,7 @@ class Way(Base):
     city = Column(String(2))
     openstreetmap_id = Column(BigInteger)
     way_nodes = relationship("WayNode", cascade="delete, delete-orphan")
+    geom = Column(Geometry('LINESTRING'))
 
     def __init__(self):
         self.id = None
