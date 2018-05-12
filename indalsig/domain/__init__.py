@@ -63,6 +63,7 @@ class WayNode(Base):
     def __init__(self):
         self.seq
 
+
 class Address(Base):
 
     __tablename__ = 'sig_addresses'
@@ -75,6 +76,7 @@ class Address(Base):
     lon = Column(Numeric(13, 10))
     lat = Column(Numeric(13, 10))
 
+
 class Postcode(Base):
 
     __tablename__ = 'sig_postcodes'
@@ -82,3 +84,4 @@ class Postcode(Base):
     id = Column(Integer, primary_key=True)
     postcode = Column(Integer)
     geom = Column(Geometry('MULTIPOLYGON'))
+
